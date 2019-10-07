@@ -1,12 +1,10 @@
 <?php
-  function sum($sum) {
-  $odd = array_filter($sum = ([1, 7, 6, 100]), function ($val) {
-    return $val % 2 != 0;
-  });
 
-  foreach ($odd as $val) {
-    echo $val . '<br />';
+  function odds_sum($sum) {
+    $sum = array ([1, 7, 6, 100]);
+    foreach ($sum as $value) {
+      return $sum % 2 != 0;
+    }
   }
-  }
-  sum($sum);
-  echo 'Сумма нечетных чисел: '.array_sum($odd);
+    odds_sum($sum);
+    echo 'Сумма непарних чисел: ' . array_sum ($sum);
