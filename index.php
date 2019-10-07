@@ -1,10 +1,13 @@
 <?php
 
   function odds_sum($sum) {
-    $sum = array ([1, 7, 6, 100]);
+    $odd = 0;
     foreach ($sum as $value) {
-      return $sum % 2 != 0;
+      if ($value % 2 != 0) {
+        $odd += $value;
+      }
     }
+    return $odd;
   }
-    odds_sum($sum);
-    echo 'Сумма непарних чисел: ' . array_sum ($sum);
+    $sum = [1, 7, 5, 6, 100];
+    echo 'Сумма непарних чисел: ' . odds_sum ($sum);
